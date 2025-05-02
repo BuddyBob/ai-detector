@@ -44,6 +44,8 @@ I wanted to stay away from using LLMS for this task, one because thats entirely 
 ├── embeddings.npy            # Cached text embeddings (speeds up training)
 ├── labels.npy                # Binary labels (0: AI, 1: Human)
 └── .gitattributes            # LFS tracking configuration for large files
+```
+
 
 ## Running the Model
 
