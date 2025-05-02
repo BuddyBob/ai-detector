@@ -1,6 +1,6 @@
 # AI vs Human Text Classification
 
-Uses mmachine learning pipeline for distinguishing between AI-generated and human-written text. It utilizes sentence embeddings, logistic regression, and calibrated probability outputs to provide robust and interpretable predictions.
+Uses mmachine learning pipeline for distinguishing between AI-generated and human-written text. It utilizes sentence embeddings, logistic regression, and calibrated probability outputs.
 
 
 ## Primar Goal
@@ -31,8 +31,6 @@ I wanted to stay away from using LLMS for this task, one because thats entirely 
 
 ## File Structure
 
-.
-## File Structure
 
 ```text
 .
