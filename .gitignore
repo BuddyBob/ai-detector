@@ -1,0 +1,4 @@
+#write .gitignore ignore .env file
+# Ignore environment variables file
+
+.env
