@@ -32,18 +32,18 @@ I wanted to stay away from using LLMS for this task, one because thats entirely 
 ## File Structure
 
 .
-├── articles.json # Input dataset in JSON lines format
-├── model.py # Training script (embedding + model + calibration)
-├── predict.py # If you wanted to give a new example to the model
-├── model_calibrated.pkl # Trained and calibrated logistic regression model
-├── embedder/ # Saved sentence-transformer model
-├── embeddings.npy # Cached embeddings to avoid re-encoding takes forever
-├── labels.npy # Cached binary labels (0: AI, 1: Human)
-└── .gitattributes # LFS tracking for large files
+## File Structure
 
-labeling: 
-- AI: 0
-- Human: 1
+```text
+.
+├── articles.json             # Input dataset in JSON lines format
+├── model.py                  # Training script (embedding + model + calibration)
+├── predict.py                # Script for classifying new examples
+├── model_calibrated.pkl      # Trained and calibrated logistic regression model
+├── embedder/                 # Saved sentence-transformer model directory
+├── embeddings.npy            # Cached text embeddings (speeds up training)
+├── labels.npy                # Binary labels (0: AI, 1: Human)
+└── .gitattributes            # LFS tracking configuration for large files
 
 ## Running the Model
 
