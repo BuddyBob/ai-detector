@@ -46,12 +46,12 @@ def collect_all_links():
                         f.write(link + "\n")
                         print(f"  [+] {link}")
                     
-                    time.sleep(1)  # to respect rate limits
+                    time.sleep(1) 
                 except Exception as e:
-                    print(f"❌ Failed on '{prompt}' page {i//10 + 1}: {e}")
+                    print(f"Failed on '{prompt}' page {i//10 + 1}: {e}")
                     time.sleep(2)
 
-    print(f"\n✅ Total unique links collected: {len(seen_links)}")
+    print(f"Total unique links collected: {len(seen_links)}")
 
 if __name__ == "__main__":
     collect_all_links()

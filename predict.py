@@ -1,8 +1,12 @@
 import joblib
 import numpy as np
 from sentence_transformers import SentenceTransformer
+#arguments 
+import sys
+import os
 
-# === CONFIG ===
+
+#Config
 MODEL_PATH = "model_calibrated.pkl"
 EXAMPLE_ESSAY_PATH = "example_essay.txt"
 EMBEDDER_DIR = "embedder"
@@ -32,8 +36,13 @@ def load_example_text(file_path):
     return text
 
 
+
 if __name__ == "__main__":
-    sample = load_example_text(EXAMPLE_ESSAY_PATH)
+    #get argument --text
+    if len(sys.argv) > 1:
+        sample = sys.argv[1]
+    else:
+        sample = load_example_text("example_essay.txt")
 
     result = predict_text(sample)
     print("\nPrediction:", result["label"])

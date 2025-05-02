@@ -46,7 +46,7 @@ def load_articles_from_folder(folder):
 
 def save_dataframe_to_json(df, output_path):
     df.to_json(output_path, orient='records', lines=True)
-    print(f"📝 Dataframe saved to {output_path}")
+    print(f"Dataframe saved to {output_path}")
 
 def main():
     ai_articles = load_articles_from_folder("ai_articles")

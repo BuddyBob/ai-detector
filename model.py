@@ -29,11 +29,11 @@ def load_data(file_path):
 
 def get_embeddings(texts, labels):
     if os.path.exists(EMBEDDINGS_PATH) and os.path.exists(LABELS_PATH):
-        print("🔄 Loading cached embeddings...")
+        print("Loading cached embeddings...")
         X = np.load(EMBEDDINGS_PATH)
         y = np.load(LABELS_PATH)
     else:
-        print("⚙️  Generating new embeddings...")
+        print("Generating new embeddings...")
         embedder = SentenceTransformer(EMBEDDER_NAME)
         X = embedder.encode(texts, show_progress_bar=True)
         y = np.array(labels)
