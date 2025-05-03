@@ -1,7 +1,3 @@
-# AI vs Human Text Classification
-
-Uses mmachine learning pipeline for distinguishing between AI-generated and human-written text. It utilizes sentence embeddings, logistic regression, and calibrated probability outputs.
-
 
 ## Primar Goal
 The primary goal of this project is to create a machine learning model that can accurately classify text as either AI-generated or human-written. The model should be able to handle various types of text and provide reliable predictions with calibrated probabilities. This is achieved by combining modern embedding techniques with a lightweight and explainable classification algorithm.
